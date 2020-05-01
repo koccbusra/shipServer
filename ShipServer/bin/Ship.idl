@@ -1,0 +1,15 @@
+
+
+module Ship {
+
+  interface Aircraft {
+    string codeNumber();
+    void run();
+    readonly attribute long fuelCapacity;
+  };
+
+  interface AircraftCarrier {
+    Aircraft launch(in string name);
+  };
+
+};
